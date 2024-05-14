@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartyInvites.Chapter1", "PartyInvites.Chapter1\PartyInvites.Chapter1.csproj", "{AE664C63-F575-43D2-B628-AC7AD23AACD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageFeatures.Chapter4", "LanguageFeatures.Chapter4\LanguageFeatures.Chapter4.csproj", "{BB9CB571-DDB4-4755-92C8-56442DF18E02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE664C63-F575-43D2-B628-AC7AD23AACD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE664C63-F575-43D2-B628-AC7AD23AACD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE664C63-F575-43D2-B628-AC7AD23AACD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9CB571-DDB4-4755-92C8-56442DF18E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9CB571-DDB4-4755-92C8-56442DF18E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9CB571-DDB4-4755-92C8-56442DF18E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9CB571-DDB4-4755-92C8-56442DF18E02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
