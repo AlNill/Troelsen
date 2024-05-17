@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Product>;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Working with Visual Studio</title>
+    </head>
+    <body>
+        <h3>Products</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@($"{item.Price:C2}")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+</html>
