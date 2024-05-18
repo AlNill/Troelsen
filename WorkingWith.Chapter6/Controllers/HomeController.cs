@@ -5,5 +5,20 @@ namespace WorkingWith.Chapter6.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index() => View(SimpleRepository.SharedRepository.Products);
+    SimpleRepository Repository = SimpleRepository.SharedRepository;
+    public IActionResult Index()
+    {
+        var result = Repository.Products.Where(p => p?.Price < 50);
+        return View(result);
+    }
+
+    [HttpGet]
+    public IActionResult AddProduct() => View(new Product());
+
+    [HttpPost]
+    public IActionResult AddProduct(Product product)
+    {
+        Repository.AddProduct(product);
+        return RedirectToAction("Index");
+    }
 }
